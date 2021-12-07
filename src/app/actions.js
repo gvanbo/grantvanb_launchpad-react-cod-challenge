@@ -21,3 +21,8 @@ export const loadPostsInProgress = homePost => ({
     payload: { homePost }
 })
 
+export const LOAD_POSTS_FAILURE = "LOAD_POSTS_FAILURE";
+export const loadPostsFailure = () => ({
+  type: LOAD_POSTS_FAILURE
+})
+
