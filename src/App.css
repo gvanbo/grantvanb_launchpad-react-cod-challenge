@@ -3,4 +3,45 @@ body {
   background: -webkit-linear-gradient(to right, #363795, #005C97);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #363795, #005C97); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   
+  font-family: 'Proza Libre', sans-serif;
+  font-size: medium;
 }
+
+h1, h2, h3 {
+  font-family: 'IBM Plex Serif', serif;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: larger;
+}
+
+h2 {
+  font-size: large;
+}
+
+h3 {
+  font-size: medium;
+}
+
+
+.button_red {background-image: linear-gradient(to right, #AA076B 0%, #61045F  51%, #AA076B  100%)}
+.button_red {
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+  }
+
+  .button_red:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+  
