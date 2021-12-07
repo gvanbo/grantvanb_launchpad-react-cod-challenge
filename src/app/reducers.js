@@ -17,3 +17,18 @@ export const isLoading = (state = false, action) => {
             return state;
     }
 }
+
+export const homePosts = (state = [], action) => {
+    const { type, payload } = action;
+
+    switch (type) {
+        case LOAD_POSTS_SUCCESS: {
+            const { homePosts } = payload;
+            return homePosts;
+        }
+        case LOAD_POSTS_IN_PROGRESS:
+        case LOAD_POSTS_FAILURE:
+        default:
+            return state;    
+    }
+}
